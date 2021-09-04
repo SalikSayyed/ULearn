@@ -3,7 +3,9 @@ import React from 'react';
 import Component from './components/sampleComponent';
 //only this one line difference between imports and actual component
 export default function App() {
-  return <Component screenColor="white" />;
+  return (
+     <Component screenColor="white" />
+  ) 
 }
 //NO ';' in the entire code
 //check the compoennts folder and Screens folder.. thats where
