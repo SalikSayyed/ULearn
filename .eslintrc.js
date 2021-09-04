@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['react', 'react-native'],
+  plugins: ['react-native', 'prettier'],
   extends: ['@react-native-community'],
   rules: {
     'react-native/no-unused-styles': 1,
