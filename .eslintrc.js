@@ -4,6 +4,6 @@ module.exports = {
   rules: {
     'react-native/no-unused-styles': 1,
     'react-native/no-color-literals': 1,
-    semi: [2, 'never'],
+    semi: ['error', 'never'],
   },
 }
