@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 //notice one line difference between custom import and React,ReactNative imports
 import Component from './components/sampleComponent';
 //only this one line difference between imports and actual component
-export default function App(){
-  return(
-    <Component screenColor='white' />
-  )
+export default function App() {
+  return <Component screenColor="white" />;
 }
 //NO ';' in the entire code
 //check the compoennts folder and Screens folder.. thats where

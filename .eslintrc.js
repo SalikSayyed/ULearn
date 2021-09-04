@@ -1,4 +1,9 @@
 module.exports = {
-  root: true,
-  extends: '@react-native-community',
-};
+  plugins: ['react', 'react-native'],
+  extends: ['@react-native-community'],
+  rules: {
+    'react-native/no-unused-styles': 1,
+    'react-native/no-color-literals': 1,
+    semi: ['error', 'never'],
+  },
+}
