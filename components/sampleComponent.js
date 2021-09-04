@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyleSheet, View, Text, ScrollView } from 'react-native'
 
+import Color from '../config/Colors'
+
 export default function Base({ screenColor }) {
   const list = ['CARD 1', 'CARD 2', 'CARD 3']
   //notice I didnt use ';' So u also never use ";"
@@ -29,18 +31,18 @@ const styles = StyleSheet.create({
     height: 250,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: 'grey',
+    borderColor: Color.grey,
     borderWidth: 5,
     borderRadius: 10,
     marginBottom: 20,
   },
   cardText: {
     fontSize: 25,
-    color: 'black',
+    color: Color.black,
   },
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: Color.white,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-evenly',
