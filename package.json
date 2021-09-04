@@ -8,12 +8,11 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prepush": "npm run lint && npm run test",
-    "postinstall": "rm -rf .git/hooks/pre-push && node node_modules/husky/bin/install.js && rm -rf .git/hooks/pre-commit"
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "react": "17.0.2",
     "react-native": "0.65.1"
   },
@@ -33,5 +32,11 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
