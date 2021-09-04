@@ -1,5 +1,5 @@
-import React from 'react'
-import {StyleSheet, View, Text, ScrollView} from 'react-native'
+import React from 'react';
+import {StyleSheet, View, Text, ScrollView} from 'react-native';
 
 export default function Base({screenColor}) {
   const list = ['CARD 1', 'CARD 2', 'CARD 3']
