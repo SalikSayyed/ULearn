@@ -14,7 +14,7 @@ const TagShow = ({ backgroundColor, textColor }) => {
 const styles = StyleSheet.create({
   tagView: {
     paddingHorizontal: 5,
-    height: 20,
+    height: 24,
     textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center',
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   tagText: {
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: 'bold',
     color: Color.white,
   },
