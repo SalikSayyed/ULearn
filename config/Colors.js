@@ -7,5 +7,6 @@ const Color = {
   red: 'red',
   backgroundRed: '#FEE3ED',
   textRed: '#DBA3AE',
+  textGrey: '#DBDBDB',
 }
 export default Color
