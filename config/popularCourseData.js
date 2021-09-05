@@ -1,0 +1,48 @@
+const popularCourseData = [
+  {
+    index: 1,
+    coursename: 'Course1',
+    teacher: 'Teacher1',
+    fav: 1,
+    star: 4,
+    price: 150,
+    tags: ['BestSeller'],
+  },
+  {
+    index: 2,
+    coursename: 'Course1',
+    teacher: 'Teacher1',
+    fav: 1,
+    star: 4,
+    price: 150,
+    tags: ['BestSeller'],
+  },
+  {
+    index: 3,
+    coursename: 'Course1',
+    teacher: 'Teacher1',
+    fav: 1,
+    star: 4,
+    price: 150,
+    tags: ['BestSeller'],
+  },
+  {
+    index: 4,
+    coursename: 'Course1',
+    teacher: 'Teacher1',
+    fav: 1,
+    star: 4,
+    price: 150,
+    tags: ['BestSeller'],
+  },
+  {
+    index: 5,
+    coursename: 'Course1',
+    teacher: 'Teacher1',
+    fav: 1,
+    star: 4,
+    price: 150,
+    tags: ['BestSeller'],
+  },
+]
+export default popularCourseData
