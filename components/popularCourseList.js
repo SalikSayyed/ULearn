@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, FlatList } from 'react-native'
+import { FlatList } from 'react-native'
 
 import pcd from '../config/popularCourseData'
 import CourseCard from './CourseCard'

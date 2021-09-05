@@ -1,5 +1,3 @@
-import { ColorPropType } from 'react-native'
-
 const Color = {
   white: 'white',
   black: 'black',

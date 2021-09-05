@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, Text, Image } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 
 import Color from '../config/Colors'
 import AppText from './appText'
@@ -7,7 +7,7 @@ import AppText from './appText'
 const InstructorName = ({ text }) => {
   return (
     <View style={styles.nameStyle}>
-      <AppText text="=>" customStyle={{ fontSize: 15, color: 'grey' }} />
+      <AppText text="👤" customStyle={{ fontSize: 15, color: Color.grey }} />
       <AppText text={text} customStyle={{ fontSize: 15, color: Color.grey }} />
     </View>
   )
