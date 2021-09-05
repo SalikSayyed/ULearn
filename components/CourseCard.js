@@ -12,11 +12,11 @@ const CourseCard = ({ courseName, instructorName, price, image }) => {
       <View style={styles.cardStyle}>
         <Image source={image} style={styles.imageStyle} />
         <View style={styles.bottomCardStyle}>
-          <AppText text={courseName} />
+          <AppText text={courseName} customStyle={styles.courseName} />
           <InstructorName text={instructorName} />
           <View style={styles.infoSect}>
             <PriceView price={price} currency="$" customStyle={styles.priceStyle} />
-            <TagShow />
+            <TagShow backgroundColor={Color.backgroundRed} textColor={Color.textRed} />
           </View>
         </View>
       </View>
@@ -48,8 +48,12 @@ const styles = {
     alignItems: 'center',
   },
   priceStyle: {
-    fontSize: 15,
-    color: Color.grey,
+    fontSize: 16,
+    paddingTop: 5,
+  },
+  courseName: {
+    fontWeight: 'bold',
+    paddingTop: 5,
   },
 }
 export default CourseCard

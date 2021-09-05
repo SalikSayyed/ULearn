@@ -3,10 +3,10 @@ import { View, StyleSheet } from 'react-native'
 import Color from '../config/Colors'
 import AppText from './appText'
 
-const TagShow = () => {
+const TagShow = ({ backgroundColor, textColor }) => {
   return (
-    <View style={[styles.tagView, { backgroundColor: Color.backgroundRed }]}>
-      <AppText text="Best Seller" customStyle={[styles.tagText, { color: Color.textRed }]} />
+    <View style={[styles.tagView, { backgroundColor: backgroundColor }]}>
+      <AppText text="Best Seller" customStyle={[styles.tagText, { color: textColor }]} />
     </View>
   )
 }
@@ -14,7 +14,7 @@ const TagShow = () => {
 const styles = StyleSheet.create({
   tagView: {
     paddingHorizontal: 5,
-    height: 20,
+    height: 24,
     textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center',
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   tagText: {
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: 'bold',
     color: Color.white,
   },

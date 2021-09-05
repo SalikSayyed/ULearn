@@ -11,7 +11,7 @@ const appText = ({ customStyle, text, ...otherProps }) => (
 const styles = StyleSheet.create({
   textStyle: {
     color: Color.black,
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: Platform.OS === 'android' ? 'Roboto' : 'Avenir',
   },
 })
