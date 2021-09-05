@@ -7,8 +7,8 @@ import AppText from './appText'
 const InstructorName = ({ text }) => {
   return (
     <View style={styles.nameStyle}>
-      <AppText text="👤" customStyle={{ fontSize: 15, color: Color.grey }} />
-      <AppText text={text} customStyle={{ fontSize: 15, color: Color.grey }} />
+      <AppText text="👤" customStyle={styles.iconStyle} />
+      <AppText text={text} customStyle={styles.teacherStyle} />
     </View>
   )
 }
@@ -18,6 +18,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: 90,
+  },
+  iconStyle: {
+    fontSize: 15,
+    color: Color.grey,
+  },
+  teacherStyle: {
+    fontSize: 15,
+    color: Color.grey,
   },
 })
 export default InstructorName

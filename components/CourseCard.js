@@ -15,7 +15,7 @@ const CourseCard = ({ courseName, instructorName, price, image }) => {
           <AppText text={courseName} />
           <InstructorName text={instructorName} />
           <View style={styles.infoSect}>
-            <PriceView price={price} currency="$" customStyle={{ fontSize: 20 }} />
+            <PriceView price={price} currency="$" customStyle={styles.priceStyle} />
             <TagShow />
           </View>
         </View>
@@ -46,6 +46,10 @@ const styles = {
   infoSect: {
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  priceStyle: {
+    fontSize: 15,
+    color: Color.grey,
   },
 }
 export default CourseCard
