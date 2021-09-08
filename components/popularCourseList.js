@@ -1,11 +1,11 @@
 import React from 'react'
 import { FlatList } from 'react-native'
 
-import pcd from '../config/popularCourseData'
+import PopularCourseData from '../config/popularCourseData'
 import CourseCard from './CourseCard'
 const PopularCourseList = ({ ...otherProps }) => (
   <FlatList
-    data={pcd}
+    data={PopularCourseData}
     {...otherProps}
     renderItem={({ item }) => (
       <CourseCard
