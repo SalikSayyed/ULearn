@@ -16,7 +16,11 @@ const CourseCard = ({ courseName, instructorName, price, image }) => {
           <InstructorName text={instructorName} />
           <View style={styles.infoSect}>
             <PriceView price={price} currency="$" customStyle={styles.priceStyle} />
-            <TagShow backgroundColor={Color.backgroundRed} textColor={Color.textRed} />
+            <TagShow
+              backgroundColor={Color.backgroundRed}
+              textColor={Color.textRed}
+              tagName="Best Seller"
+            />
           </View>
         </View>
       </View>

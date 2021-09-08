@@ -3,10 +3,10 @@ import { View, StyleSheet } from 'react-native'
 import Color from '../config/Colors'
 import AppText from './appText'
 
-const TagShow = ({ backgroundColor, textColor }) => {
+const TagShow = ({ backgroundColor, textColor, tagName }) => {
   return (
     <View style={[styles.tagView, { backgroundColor: backgroundColor }]}>
-      <AppText text="Best Seller" customStyle={[styles.tagText, { color: textColor }]} />
+      <AppText text={tagName} customStyle={[styles.tagText, { color: textColor }]} />
     </View>
   )
 }
