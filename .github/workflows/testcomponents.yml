@@ -23,6 +23,3 @@ jobs:
 
       - name: Run tests
         run: yarn jest
-
-      - name: Run Tests test
-        run: yarn test
