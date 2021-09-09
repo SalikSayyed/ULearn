@@ -1,23 +1,9 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
-import PopularList from './components/popularCourseList'
+/* TESTING PURPOSE ONLY AFTER CHECKING RETURN TO THIS=>STATE*/
+//import { View, StyleSheet } from 'react-native'
+//import PopularList from './components/popularCourseList'
+//import SampleComponent from './components/sampleComponent' /* requires screenColor='anycolor'*/
+import SampleScreen from './screens/SampleScreen'
 export default function App() {
-  return (
-    <View style={styles.mainScreen}>
-      <View style={styles.placer}>
-        <PopularList horizontal={true} showsHorizontalScrollIndicator={false} />
-      </View>
-    </View>
-  )
+  return <SampleScreen />
 }
-
-const styles = StyleSheet.create({
-  mainScreen: {
-    flex: 1,
-    justifyContent: 'center',
-    alignContent: 'center',
-  },
-  placer: {
-    marginTop: 20,
-  },
-})
