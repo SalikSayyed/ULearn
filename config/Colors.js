@@ -8,5 +8,6 @@ const Color = {
   backgroundRed: '#FEE3ED',
   textRed: '#DBA3AE',
   textGrey: '#DBDBDB',
+  buttonBlue: '#00A9B6',
 }
 export default Color
