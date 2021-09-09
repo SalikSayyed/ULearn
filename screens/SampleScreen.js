@@ -7,7 +7,6 @@ export default function SampleScreen({ customStyle }) {
     <View style={styles.screenStyle}>
       <Text style={styles.textStyle}>Hello this is complete Screen and I am the TEXT on IT!!!</Text>
       <Text style={[styles.textStyle, customStyle]}>
-        {' '}
         And This is ICON u have to Press=> win + . USE "🌈"
       </Text>
       <Text style={styles.textStyle}>
