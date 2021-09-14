@@ -16,13 +16,11 @@ const CourseCard = ({ courseName, instructorName, price, image }) => {
           <InstructorName text={instructorName} />
           <View style={styles.infoSect}>
             <PriceView price={price} currency="$" customStyle={styles.priceStyle} />
-            <View style={styles.tag}>
-              <TagShow
-                backgroundColor={Color.backgroundRed}
-                textColor={Color.textRed}
-                tagName="Best Seller"
-              />
-            </View>
+            <TagShow
+              backgroundColor={Color.backgroundRed}
+              textColor={Color.textRed}
+              tagName="Best Seller"
+            />
           </View>
         </View>
       </View>
@@ -32,23 +30,22 @@ const CourseCard = ({ courseName, instructorName, price, image }) => {
 
 const styles = {
   cardStyle: {
-    width: 260,
-    height: 270,
+    width: 250,
+    height: 300,
     backgroundColor: Color.white,
-    borderRadius: 25,
+    borderRadius: 10,
     marginHorizontal: 5,
   },
   imageStyle: {
-    width: 260,
-    position: 'relative',
-    height: 180,
-    borderRadius: 20,
+    width: 250,
+    height: 200,
+    borderRadius: 10,
     resizeMode: 'stretch',
   },
   bottomCardStyle: {
     flexDirection: 'column',
     paddingLeft: 10,
-    justifyContent: 'space-between',
+    justifyContent: 'space-evenly',
   },
   infoSect: {
     flexDirection: 'row',
@@ -61,9 +58,6 @@ const styles = {
   courseName: {
     fontWeight: 'bold',
     paddingTop: 5,
-  },
-  tag: {
-    transform: [{ translateY: 3 }],
   },
 }
 export default CourseCard
