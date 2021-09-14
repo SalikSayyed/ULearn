@@ -25,7 +25,7 @@ const intrest = [
   },
   {
     label: 'Marketing',
-    textIcon: '📊',
+    textIcon: '🛒',
   },
   {
     label: 'Music',
