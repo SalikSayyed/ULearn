@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
   OuterBox: {
     width: 70,
     height: 70,
-    backgroundColor: Color.white,
     borderRadius: 20,
     borderWidth: 3,
     justifyContent: 'center',
