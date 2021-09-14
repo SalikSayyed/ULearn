@@ -14,7 +14,7 @@ export default function Home() {
       screenOptions={{ headerShown: false }}
     >
       <Stack.Screen name="HOME" component={CourseListScreen} />
-      <Stack.Screen name="Notifications" component={SampleScreen} />
+      <Stack.Screen name="Instructions" component={SampleScreen} />
       <Stack.Screen name="Profile" component={SampleScreen} />
       <Stack.Screen name="Settings" component={CourseListScreen} />
     </Stack.Navigator>

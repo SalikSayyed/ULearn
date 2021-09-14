@@ -9,7 +9,7 @@ export default function Home({ navigation }) {
       <View style={styles.containerStyle}>
         <PopularCourseList />
         <View style={styles.buttonView}>
-          <Button title="INSTRUCTIONS" onPress={() => navigation.push('Notifications')} />
+          <Button title="INSTRUCTIONS" onPress={() => navigation.push('Instructions')} />
         </View>
       </View>
     </View>
@@ -23,12 +23,10 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
   screenStyle: {
-    backgroundColor: Color.white,
     flex: 1,
     justifyContent: 'center',
   },
   containerStyle: {
-    backgroundColor: Color.white,
     justifyContent: 'center',
     alignItems: 'center',
   },

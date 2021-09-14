@@ -9,6 +9,7 @@ import OctIcons from 'react-native-vector-icons/Ionicons'
 import SampleComponent from '../components/sampleComponent' /* requires screenColor='anycolor'*/
 import SampleScreen from '../screens/SampleScreen'
 import HomeScreen from './ExploreNavigation'
+import IntrestSelector from '../components/intrestCombo'
 import Color from '../config/Colors'
 
 const Tab = createBottomTabNavigator()
@@ -31,15 +32,25 @@ export default function App() {
           name="Explore"
           component={HomeScreen}
           options={{
-            tabBarIcon: ({ color }) => <OctIcons name="compass-outline" color={color} size={30} />,
+            tabBarIcon: ({ focused, color }) => (
+              <OctIcons
+                name={focused ? 'compass' : 'compass-outline'}
+                color={color}
+                size={focused ? 35 : 30}
+              />
+            ),
           }}
         />
         <Tab.Screen
           name="My Courses"
           component={SampleComponent}
           options={{
-            tabBarIcon: ({ color }) => (
-              <OctIcons name="play-circle-outline" color={color} size={30} />
+            tabBarIcon: ({ focused, color }) => (
+              <OctIcons
+                name={focused ? 'play-circle' : 'play-circle-outline'}
+                color={color}
+                size={focused ? 35 : 30}
+              />
             ),
           }}
         />
@@ -47,14 +58,26 @@ export default function App() {
           name="Wishlist"
           component={SampleScreen}
           options={{
-            tabBarIcon: ({ color }) => <OctIcons name="heart-outline" color={color} size={30} />,
+            tabBarIcon: ({ focused, color }) => (
+              <OctIcons
+                name={focused ? 'heart' : 'heart-outline'}
+                color={color}
+                size={focused ? 35 : 30}
+              />
+            ),
           }}
         />
         <Tab.Screen
           name="Account"
-          component={SampleComponent}
+          component={IntrestSelector}
           options={{
-            tabBarIcon: ({ color }) => <OctIcons name="person-outline" color={color} size={30} />,
+            tabBarIcon: ({ focused, color }) => (
+              <OctIcons
+                name={focused ? 'person' : 'person-outline'}
+                color={color}
+                size={focused ? 35 : 30}
+              />
+            ),
           }}
         />
       </Tab.Navigator>
@@ -75,5 +98,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: 'bold',
     fontFamily: Platform.OS === 'android' ? 'Roboto' : 'Avenir',
+    paddingBottom: 5,
   },
 })
