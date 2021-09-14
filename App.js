@@ -1,9 +1,12 @@
+import 'react-native-gesture-handler'
 import React from 'react'
-/* TESTING PURPOSE ONLY AFTER CHECKING RETURN TO THIS=>STATE*/
-//import { View, StyleSheet } from 'react-native'
-//import PopularList from './components/popularCourseList'
-//import SampleComponent from './components/sampleComponent' /* requires screenColor='anycolor'*/
-import SampleScreen from './screens/SampleScreen'
+import ScreenArea from './components/ScreenArea'
+import Color from './config/Colors'
+import LandingScreen from './navigation/BottomTabNavigation'
 export default function App() {
-  return <SampleScreen />
+  return (
+    <ScreenArea screenColor={Color.lightGrey}>
+      <LandingScreen />
+    </ScreenArea>
+  )
 }
