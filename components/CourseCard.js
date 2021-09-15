@@ -6,6 +6,7 @@ import AppText from './appText'
 import InstructorName from './instructorName'
 import PriceView from './priceView'
 import TagShow from './tagShow'
+import CurrencySymbol from '../config/CurrencySymbols'
 const CourseCard = ({ courseName, instructorName, price, image }) => {
   return (
     <TouchableOpacity onPress={() => console.log('Clicked!!')}>
@@ -15,7 +16,11 @@ const CourseCard = ({ courseName, instructorName, price, image }) => {
           <AppText text={courseName} customStyle={styles.courseName} />
           <InstructorName text={instructorName} />
           <View style={styles.infoSect}>
-            <PriceView price={price} currency="$" customStyle={styles.priceStyle} />
+            <PriceView
+              price={price}
+              currency={CurrencySymbol.INDIAN_RUPEE_SIGN}
+              customStyle={styles.priceStyle}
+            />
             <View style={styles.tag}>
               <TagShow
                 backgroundColor={Color.backgroundRed}
