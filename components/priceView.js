@@ -3,7 +3,7 @@ import { StyleSheet, Text } from 'react-native'
 import Color from '../config/Colors'
 
 const PriceView = ({ price, customStyle, currency }) => {
-  return <Text style={[styles.priceText, customStyle]}>{currency + price.toString()}</Text>
+  return <Text style={[styles.priceText, customStyle]}>{currency + ' ' + price.toString()}</Text>
 }
 
 const styles = StyleSheet.create({
