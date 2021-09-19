@@ -14,7 +14,11 @@ const App = () => {
       {/* <Button tagName="Go to my course" onPress={()=>console.log("Clicked!")} /> */}
       <TransactionPage />
 
-      <Button tagName="Go to my course" onPress={() => console.log('Clicked!')} />
+      <Button
+        tagName="Go to my course"
+        onPress={() => console.log('Clicked!')}
+        customeStyle={styles.buttonStyle}
+      />
       {/* <Button tagName="Go to my course" onPress={()=>console.log("Clicked!")} /> */}
       <LinkButton tagName="Back to Home" onPress={() => console.log('Clicked')} />
     </View>
@@ -29,5 +33,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  buttonStyle: {
+    marginHorizontal: 10,
   },
 })
