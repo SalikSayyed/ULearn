@@ -13,5 +13,8 @@ const Color = {
   tabBlue: '#03A8B3',
   tabGrey: '#DCDCDC',
   lightGrey: '#FAFAFA',
+  lightlightGrey: '#EFF1F1',
+  lightGreenishBlue: '#01CCB0',
+  shadyGreenishBlue: '#DDF5F4',
 }
 export default Color

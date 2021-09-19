@@ -2,7 +2,7 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
 import Color from '../config/Colors'
-import AppText from './appText'
+import AppText from './AppText'
 import Ion from 'react-native-vector-icons/Ionicons'
 
 const InstructorName = ({ text }) => {
@@ -17,12 +17,13 @@ const InstructorName = ({ text }) => {
 const styles = StyleSheet.create({
   nameStyle: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: 90,
+    justifyContent: 'flex-start',
+    width: 200,
   },
   teacherStyle: {
     fontSize: 14,
     color: Color.grey,
+    paddingHorizontal: 5,
   },
 })
 export default InstructorName

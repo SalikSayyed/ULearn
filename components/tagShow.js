@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import Color from '../config/Colors'
-import AppText from './appText'
+import AppText from './AppText'
 
 const TagShow = ({ backgroundColor, textColor, tagName }) => {
   return (
@@ -14,6 +14,7 @@ const TagShow = ({ backgroundColor, textColor, tagName }) => {
 const styles = StyleSheet.create({
   tagView: {
     paddingHorizontal: 5,
+    maxWidth: 80,
     height: 24,
     textAlign: 'center',
     alignItems: 'center',

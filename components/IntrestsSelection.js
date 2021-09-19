@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, Text, TouchableWithoutFeedback } from 'react-native'
 import Color from '../config/Colors'
-import AppText from './appText'
+import AppText from './AppText'
 
 export default function IntrestSelection({ label, textIcon }) {
   const [select, changeSelect] = React.useState(false)
