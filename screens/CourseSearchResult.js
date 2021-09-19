@@ -1,6 +1,6 @@
 import React from 'react'
 import { FlatList, StyleSheet } from 'react-native'
-import CourseData from '../config/popularCourseData'
+import CourseData from '../config/PopularCourseData'
 import CourseCard from '../components/CourseCardSmall'
 
 export default function CourseSerachResult() {

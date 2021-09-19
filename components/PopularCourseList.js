@@ -1,7 +1,7 @@
 import React from 'react'
 import { FlatList } from 'react-native'
 
-import PopularCourseData from '../config/popularCourseData'
+import PopularCourseData from '../config/PopularCourseData'
 import CourseCard from './CourseCard'
 const PopularCourseList = ({ ...otherProps }) => (
   <FlatList

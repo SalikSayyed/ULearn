@@ -3,7 +3,7 @@ import React from 'react'
 import { FlatList, StyleSheet, View } from 'react-native'
 //import LandingScreen from './navigation/BottomTabNavigation'
 import IntrestSelection from './IntrestsSelection'
-import interestData from '../config/intrestData'
+import interestData from '../config/IntrestData'
 
 export default function InterestCombo() {
   return (
