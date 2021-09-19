@@ -8,6 +8,7 @@ import OctIcons from 'react-native-vector-icons/Ionicons'
 //import PopularList from './components/popularCourseList'
 //import SampleComponent from '../components/sampleComponent' /* requires screenColor='anycolor'*/
 //import SampleScreen from '../screens/SampleScreen'
+import TransactionScreen from '../screens/Transaction'
 import MyCourse from '../screens/MyCourseScreen'
 import CourseSearchResult from '../screens/CourseSearchResult'
 import HomeScreen from './ExploreNavigation'
@@ -32,7 +33,7 @@ export default function App() {
       >
         <Tab.Screen
           name="Explore"
-          component={HomeScreen}
+          component={TransactionScreen}
           options={{
             tabBarIcon: ({ focused, color }) => (
               <OctIcons

@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import TransactionPage from './screens/TransactionPage'
-import Button from './components/Button'
+import TransactionPage from '../screens/TransactionPage'
+import Button from '../components/Button'
 // import Color from './config/Colors'
-import LinkButton from './components/LinkButton'
-import Box from './components/Box'
+import LinkButton from '../components/LinkButton'
+import Box from '../components/Box'
 
 const App = () => {
   return (
