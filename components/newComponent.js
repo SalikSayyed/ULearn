@@ -16,7 +16,7 @@ export default function Base({ screenColor }) {
         {list.map((element, index) => {
           return (
             <View key={index} style={[styles.cardComponent, { backgroundColor: bgColor[index] }]}>
-              <Text style={styles.cardText}>{"🎶"+element}</Text>
+              <Text style={styles.cardText}>{'🎶' + element}</Text>
             </View>
           )
         })}

@@ -1,5 +1,5 @@
 const Color = {
-  white: 'white',
+  white: '#ffffff',
   black: 'black',
   blue: 'blue',
   grey: 'grey',
@@ -7,7 +7,9 @@ const Color = {
   red: 'red',
   backgroundRed: '#FEE3ED',
   textRed: '#DBA3AE',
-  textGrey: '#DBDBDB',
+  textGrey: '#B0B1B2',
   buttonBlue: '#00A9B6',
+  darkgray: '#a9a9a9',
+  yellow: '#ffea7d',
 }
 export default Color
