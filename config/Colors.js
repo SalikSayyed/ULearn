@@ -2,6 +2,7 @@ const Color = {
   white: '#ffffff',
   black: 'black',
   blue: 'blue',
+  transparent: 'transparent',
   grey: 'grey',
   priceBlue: '#4b9ea5',
   red: 'red',
@@ -11,5 +12,11 @@ const Color = {
   buttonBlue: '#00A9B6',
   darkgray: '#a9a9a9',
   yellow: '#ffea7d',
+  tabBlue: '#03A8B3',
+  tabGrey: '#DCDCDC',
+  lightGrey: '#FAFAFA',
+  lightlightGrey: '#EFF1F1',
+  lightGreenishBlue: '#01CCB0',
+  shadyGreenishBlue: '#DDF5F4',
 }
 export default Color
