@@ -6,10 +6,12 @@ import OctIcons from 'react-native-vector-icons/Ionicons'
 /* TESTING PURPOSE ONLY AFTER CHECKING RETURN TO THIS=>STATE*/
 //import { View, StyleSheet } from 'react-native'
 //import PopularList from './components/popularCourseList'
-import SampleComponent from '../components/sampleComponent' /* requires screenColor='anycolor'*/
-import SampleScreen from '../screens/SampleScreen'
+//import SampleComponent from '../components/sampleComponent' /* requires screenColor='anycolor'*/
+//import SampleScreen from '../screens/SampleScreen'
+import MyCourse from '../screens/MyCourseScreen'
+import CourseSearchResult from '../screens/CourseSearchResult'
 import HomeScreen from './ExploreNavigation'
-import IntrestSelector from '../components/intrestCombo'
+import IntrestSelector from '../components/IntrestCombo'
 import Color from '../config/Colors'
 
 const Tab = createBottomTabNavigator()
@@ -43,7 +45,7 @@ export default function App() {
         />
         <Tab.Screen
           name="My Courses"
-          component={SampleComponent}
+          component={MyCourse}
           options={{
             tabBarIcon: ({ focused, color }) => (
               <OctIcons
@@ -56,7 +58,7 @@ export default function App() {
         />
         <Tab.Screen
           name="Wishlist"
-          component={SampleScreen}
+          component={CourseSearchResult}
           options={{
             tabBarIcon: ({ focused, color }) => (
               <OctIcons

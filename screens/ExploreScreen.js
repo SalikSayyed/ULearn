@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, View, StyleSheet } from 'react-native'
-import PopularCourseList from '../components/popularCourseList'
+import PopularCourseList from '../components/PopularCourseList'
 import Color from '../config/Colors'
 
 export default function Home({ navigation }) {
