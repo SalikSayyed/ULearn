@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, TouchableOpacity } from 'react-native'
 import Color from '../config/Colors'
-import AppText from './appText'
+import AppText from './AppText'
 
 const Button = ({ buttonColor, tagName, onPress }) => {
   return (
