@@ -13,7 +13,7 @@ const CourseCard = ({ courseName, instructorName, price, image }) => {
       <View style={styles.cardStyle}>
         <Image source={image} style={styles.imageStyle} />
         <View style={styles.bottomCardStyle}>
-          <AppText nl={1} text={courseName} customStyle={styles.courseName} />
+          <AppText text={courseName} customStyle={styles.courseName} />
           <InstructorName text={instructorName} />
           <View style={styles.infoSect}>
             <PriceView
@@ -37,16 +37,17 @@ const CourseCard = ({ courseName, instructorName, price, image }) => {
 
 const styles = {
   cardStyle: {
-    width: 260,
-    height: 270,
+    width: 180,
+    height: 210,
     backgroundColor: Color.white,
     borderRadius: 25,
     marginHorizontal: 5,
+    marginVertical: 10,
   },
   imageStyle: {
-    width: 260,
+    width: 180,
     position: 'relative',
-    height: 180,
+    height: 130,
     borderRadius: 20,
     resizeMode: 'stretch',
   },
@@ -66,6 +67,7 @@ const styles = {
   courseName: {
     fontWeight: 'bold',
     paddingTop: 5,
+    color: Color.black,
   },
   tag: {
     transform: [{ translateY: 3 }],

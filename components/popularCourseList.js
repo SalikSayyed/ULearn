@@ -7,6 +7,8 @@ const PopularCourseList = ({ ...otherProps }) => (
   <FlatList
     data={PopularCourseData}
     {...otherProps}
+    horizontal={true}
+    showsHorizontalScrollIndicator={false}
     renderItem={({ item }) => (
       <CourseCard
         image={require('../assets/index1_lot1_cat1.png')}

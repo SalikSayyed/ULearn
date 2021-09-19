@@ -2,12 +2,13 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
 import Color from '../config/Colors'
-import AppText from './appText'
+import AppText from './AppText'
+import Ion from 'react-native-vector-icons/Ionicons'
 
 const InstructorName = ({ text }) => {
   return (
     <View style={styles.nameStyle}>
-      <AppText text="👤" customStyle={styles.iconStyle} />
+      <Ion name="person" color={Color.textGrey} size={18} />
       <AppText text={text} customStyle={styles.teacherStyle} />
     </View>
   )
@@ -16,16 +17,13 @@ const InstructorName = ({ text }) => {
 const styles = StyleSheet.create({
   nameStyle: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: 90,
-  },
-  iconStyle: {
-    fontSize: 14,
-    color: Color.grey,
+    justifyContent: 'flex-start',
+    width: 200,
   },
   teacherStyle: {
     fontSize: 14,
     color: Color.grey,
+    paddingHorizontal: 5,
   },
 })
 export default InstructorName
