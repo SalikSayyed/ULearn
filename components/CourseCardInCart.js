@@ -4,23 +4,27 @@ import CourseCardVerticalInfo from './CourseCardVerticalInfo'
 import CheckBox from './CheckBox'
 import Color from '../config/Colors'
 import AppText from './AppText'
-export default function CourseCardInCart() {
+import Button from './Button'
+export default function CourseCardInCart({ navigation }) {
   return (
-    <View style={styles.InCartItem}>
-      <View style={styles.insideContainer}>
-        <CheckBox state={1} />
-        <CourseCardVerticalInfo
-          courseName="Awesome Blender Course"
-          image={require('../assets/index1_lot1_cat1.png')}
-          instructorName="Awesome Instructor"
-          tagName="Label"
-        />
+    <>
+      <View style={styles.InCartItem}>
+        <View style={styles.insideContainer}>
+          <CheckBox state={1} />
+          <CourseCardVerticalInfo
+            courseName="Awesome Blender Course"
+            image={require('../assets/index1_lot1_cat1.png')}
+            instructorName="Awesome Instructor"
+            tagName="Label"
+          />
+        </View>
+        <View style={styles.linkContainer}>
+          <AppText text="Remove" style={styles.remove} />
+          <AppText text="Move to WishList" style={styles.addToWishList} />
+        </View>
       </View>
-      <View style={styles.linkContainer}>
-        <AppText text="Remove" style={styles.remove} />
-        <AppText text="Move to WishList" style={styles.addToWishList} />
-      </View>
-    </View>
+      <Button buttonColor={Color.buttonBlue} onPress={() => navigation.push('Profile')} />
+    </>
   )
 }
 

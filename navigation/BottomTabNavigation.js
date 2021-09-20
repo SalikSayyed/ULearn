@@ -9,7 +9,8 @@ import OctIcons from 'react-native-vector-icons/Ionicons'
 //import SampleComponent from '../components/sampleComponent' /* requires screenColor='anycolor'*/
 //import SampleScreen from '../screens/SampleScreen'
 //import TransactionScreen from '../screens/Transaction' //<---@Rutik
-import MyCourse from '../screens/MyCourseScreen'
+import LoginScreen from '../screens/LoginScreen'
+//import MyCourse from '../screens/MyCourseScreen'
 import CourseSearchResult from '../screens/CourseSearchResult'
 import HomeScreen from './ExploreNavigation'
 import IntrestSelector from '../components/IntrestCombo'
@@ -33,7 +34,7 @@ export default function App() {
       >
         <Tab.Screen
           name="Explore"
-          component={HomeScreen}
+          component={LoginScreen}
           options={{
             tabBarIcon: ({ focused, color }) => (
               <OctIcons
@@ -46,7 +47,7 @@ export default function App() {
         />
         <Tab.Screen
           name="My Courses"
-          component={MyCourse}
+          component={HomeScreen}
           options={{
             tabBarIcon: ({ focused, color }) => (
               <OctIcons

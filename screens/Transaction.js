@@ -6,7 +6,7 @@ import Button from '../components/Button'
 import LinkButton from '../components/LinkButton'
 import Box from '../components/Box'
 
-const App = () => {
+const Transaction = ({ navigation }) => {
   return (
     <View style={styles.screenStyle}>
       <Box />
@@ -16,16 +16,22 @@ const App = () => {
 
       <Button
         tagName="Go to my course"
-        onPress={() => console.log('Clicked!')}
+        onPress={() => navigation.setOptions({ tabBarStyle: { height: 0 } })}
         customeStyle={styles.buttonStyle}
       />
       {/* <Button tagName="Go to my course" onPress={()=>console.log("Clicked!")} /> */}
-      <LinkButton tagName="Back to Home" onPress={() => console.log('Clicked')} />
+      <LinkButton
+        tagName="Back to Home"
+        onPress={() => {
+          navigation.pop()
+          navigation.navigate('Explore')
+        }}
+      />
     </View>
   )
 }
 
-export default App
+export default Transaction
 
 const styles = StyleSheet.create({
   screenStyle: {
