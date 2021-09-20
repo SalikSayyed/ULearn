@@ -10,7 +10,7 @@ const Stack = createStackNavigator()
 export default function Home() {
   return (
     <Stack.Navigator
-      initialRouteName="HOME"
+      initialRouteName="Profile"
       cardShadowEnabled={false}
       animationEnabled={true}
       screenOptions={{ headerShown: false }}
