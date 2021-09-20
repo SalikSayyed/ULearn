@@ -5,11 +5,12 @@ import Button from '../components/Button'
 // import Color from './config/Colors'
 import LinkButton from '../components/LinkButton'
 import Box from '../components/Box'
+import xml from '../assets/bloom'
 
 const Transaction = ({ navigation }) => {
   return (
     <View style={styles.screenStyle}>
-      <Box />
+      <Box svg={xml} customBoxStyle={styles.box} />
 
       {/* <Button tagName="Go to my course" onPress={()=>console.log("Clicked!")} /> */}
       <TransactionPage />
@@ -42,5 +43,8 @@ const styles = StyleSheet.create({
   },
   buttonStyle: {
     marginHorizontal: 10,
+  },
+  box: {
+    transform: [{ rotateY: '30deg' }],
   },
 })

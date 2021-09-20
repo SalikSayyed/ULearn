@@ -1,28 +1,24 @@
 import React from 'react'
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet } from 'react-native'
+import { SvgXml } from 'react-native-svg'
 import Color from '../config/Colors'
 
-export default class Box extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={styles.box}>
-          <View style={styles.inner}>
-            <Text style={styles.text}>CONGRATULATIONS</Text>
-          </View>
-        </View>
+export default function Box({ svg, customBoxStyle, customSvgStyle }) {
+  return (
+    <View style={[styles.container, customBoxStyle]}>
+      <View style={styles.box}>
+        {svg && (
+          <SvgXml width="100%" height="100%" xml={svg} style={[styles.imageSvg, customSvgStyle]} />
+        )}
       </View>
-    )
-  }
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: '30%',
-    // padding: 5,
-    // flexDirection: 'row',
-    // flexWrap: 'wrap',
   },
   box: {
     width: '90%',
@@ -31,19 +27,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
     marginLeft: 20,
     marginRight: 20,
-
-    padding: 5,
-  },
-  inner: {
-    flex: 1,
     backgroundColor: Color.yellow,
+    padding: 5,
     alignItems: 'center',
-    justifyContent: 'center',
-
     borderRadius: 40,
   },
-  text: {
-    fontSize: 30,
-    fontWeight: 'bold',
+  imageSvg: {
+    position: 'absolute',
+    transform: [{ translateY: -80 }],
   },
 })

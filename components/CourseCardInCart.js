@@ -23,7 +23,11 @@ export default function CourseCardInCart({ navigation }) {
           <AppText text="Move to WishList" style={styles.addToWishList} />
         </View>
       </View>
-      <Button buttonColor={Color.buttonBlue} onPress={() => navigation.push('Profile')} />
+      <Button
+        buttonColor={Color.buttonBlue}
+        tagName="Transaction Screen"
+        onPress={() => navigation.push('Profile')}
+      />
     </>
   )
 }

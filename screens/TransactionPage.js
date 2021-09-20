@@ -5,7 +5,7 @@ import Color from '../config/Colors'
 const TransactionPage = () => {
   return (
     <View style={styles.containerStyle}>
-      <Text style={styles.title}>Transaction success 🎉</Text>
+      <Text style={styles.title}>Transaction Success 🎉</Text>
       <Text style={styles.text}>Congratulation! Your transaction is successful,</Text>
       <Text style={styles.text1}>you can start your course now</Text>
     </View>
