@@ -1,11 +1,11 @@
 import 'react-native-gesture-handler'
 import React from 'react'
 import { FlatList, StyleSheet, View } from 'react-native'
-//import LandingScreen from './navigation/BottomTabNavigation'
-import IntrestSelection from './IntrestsSelection'
+import IntrestSelection from '../components/IntrestsSelection'
 import interestData from '../config/IntrestData'
+import Button from '../components/Button'
 
-export default function InterestCombo() {
+export default function InterestCombo({ navigation }) {
   return (
     <View style={styles.listStyle}>
       <FlatList
@@ -16,6 +16,12 @@ export default function InterestCombo() {
         data={interestData}
         renderItem={({ item }) => {
           return <IntrestSelection label={item.label} textIcon={item.textIcon} />
+        }}
+      />
+      <Button
+        tagName="Let's Begin"
+        onPress={() => {
+          navigation.push('MainTabScreen')
         }}
       />
     </View>
