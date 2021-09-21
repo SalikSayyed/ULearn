@@ -9,7 +9,7 @@ export default function Home({ navigation }) {
       <View style={styles.containerStyle}>
         <PopularCourseList />
         <View style={styles.buttonView}>
-          <Button title="INSTRUCTIONS" onPress={() => navigation.push('Instructions')} />
+          <Button title="INSTRUCTIONS" onPress={() => navigation.push('SetNewPassword')} />
         </View>
       </View>
     </View>

@@ -1,26 +1,18 @@
 import React from 'react'
 import { StyleSheet, Platform } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import OctIcons from 'react-native-vector-icons/Ionicons'
-/* TESTING PURPOSE ONLY AFTER CHECKING RETURN TO THIS=>STATE*/
-//import { View, StyleSheet } from 'react-native'
-//import PopularList from './components/popularCourseList'
-//import SampleComponent from '../components/sampleComponent' /* requires screenColor='anycolor'*/
-//import SampleScreen from '../screens/SampleScreen'
-//import TransactionScreen from '../screens/Transaction' //<---@Rutik
-import LoginScreen from '../screens/LoginScreen'
-//import MyCourse from '../screens/MyCourseScreen'
+import ExploreScreen from '../screens/ExploreScreen'
+import MyCourseScreen from '../screens/MyCourseScreen'
+import TransactionSuccesScreen from '../screens/TransactionSuccessScreen'
 import CourseSearchResult from '../screens/CourseSearchResult'
-import HomeScreen from './ExploreNavigation'
-import IntrestSelector from '../components/IntrestCombo'
 import Color from '../config/Colors'
 
 const Tab = createBottomTabNavigator()
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <>
       <Tab.Navigator
         initialRouteName="Explore"
         screenOptions={{
@@ -34,7 +26,7 @@ export default function App() {
       >
         <Tab.Screen
           name="Explore"
-          component={LoginScreen}
+          component={ExploreScreen}
           options={{
             tabBarIcon: ({ focused, color }) => (
               <OctIcons
@@ -47,7 +39,7 @@ export default function App() {
         />
         <Tab.Screen
           name="My Courses"
-          component={HomeScreen}
+          component={MyCourseScreen}
           options={{
             tabBarIcon: ({ focused, color }) => (
               <OctIcons
@@ -73,7 +65,7 @@ export default function App() {
         />
         <Tab.Screen
           name="Account"
-          component={IntrestSelector}
+          component={TransactionSuccesScreen}
           options={{
             tabBarIcon: ({ focused, color }) => (
               <OctIcons
@@ -85,7 +77,7 @@ export default function App() {
           }}
         />
       </Tab.Navigator>
-    </NavigationContainer>
+    </>
   )
 }
 const styles = StyleSheet.create({
